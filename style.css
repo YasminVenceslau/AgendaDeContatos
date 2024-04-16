@@ -1,0 +1,94 @@
+:root{
+    cor1: #2B308C;
+    cor2:#4465A6 ;
+    cor3:#141640;
+    cor4:#F294D1 ;
+    cor5:#65BFBF;
+    cor6: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #2B308C;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding:25px 0 ;
+}
+
+main{
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+
+    padding: 50px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #1617176c;
+
+    background-color: #65BFBF;
+}
+
+form{
+    margin-bottom: 15px;
+}
+
+table tr{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{ /* formataçao do rodape, cor e tamanho */
+    background-color: #141640;
+    color: #F2EBDC;
+    padding: 2px;
+    
+
+    min-width: 300px;
+    max-width:  600px;
+
+    margin: 50px  auto ;
+
+    text-align: center;
+    font-style: italic;
+
+    font-size: 13px;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #1617176c;
+}
+
+
+footer a{ /* cor do link e retirada da linha */
+    color: #F294D1;
+    font-weight: bolder;
+    text-decoration: none;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+footer a:hover{/* adiçao da linha com formato de onda no link ao ser tocado */
+    
+    text-decoration: underline;
+    text-decoration-style:wavy ;
+    
+}

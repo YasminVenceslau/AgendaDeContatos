@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <main>
+        <form  id="form">
+            <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome">
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Susana</td>
+                    <td>(11)9851-56311</td>
+                    <td>susana@email.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Contatos Cadastrados</td>
+                    <td>1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer class="rodape" id="roda">
+        
+        <p>Site criado por <a href="https://github.com/YasminVenceslau" target="_blank" title="Conheça o meu GitHub">Yasmin Venceslau</a>   ©  Todos os direitos reservados - 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
