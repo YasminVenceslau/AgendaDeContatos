@@ -11,11 +11,13 @@
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 body{ /* cor de fundo */
     
     background-color: #2B308C;
+    
     
 }
 
@@ -23,6 +25,8 @@ h1{ /* título cor e font */
     text-align: center;
     color: white;
     padding-bottom: 10px;
+
+    text-shadow: 2px 2px 1px #141640;
     
 }
 
@@ -47,17 +51,61 @@ main{ /* torna a página responsivel */
 
 form{ /* espaçamento ta tabela e segundo titulo */
     margin-bottom: 15px;
-    padding: 5px;
+    padding: 10px;
 
-    display: flexbox;
+   
     text-align: center;
     
+    
+}
+
+input{
+border-color: #141640;
+background-color: #141640ba;
+box-shadow: 1px 1px 2px 1px #08091c3f;
+padding: 0 30px ;
+text-align: center;
+border-radius: 5px;
+
+}
+
+input:hover{
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+
+    
+}
+
+button{
+    background-color: #4465A6;
+    color: aliceblue;
+    
+
+    padding: 0 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover{
+    border: 2px solid aliceblue;
+    background-color:#5b87de;
+}
+
+
+
+
+::placeholder{
+    color: rgba(240, 248, 255, 0.458);
+    opacity: 1;
 }
 
 table{/* FAZ A TABELA ficar centralizadda */
     width: 100%;
-   
+    
     border-collapse: collapse;
+    box-shadow: 1px 1px 2px 1px #08091c3f;
+
 }
 table th{
     background-color: #4465A6;
@@ -73,16 +121,10 @@ th{/* faz a borda da tabela */
     
 }
 
-tr:hover{
+tr:hover{ /* faz com que ao passar o mouse na tabela, mude de cor */
     background-color: #5b87de;
     color: aliceblue;
 }
-
-
-
-
-
-
 
 
 footer{ /* formataçao do rodape, cor e tamanho */
