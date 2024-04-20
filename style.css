@@ -47,16 +47,26 @@ main{ /* torna a página responsivel */
     box-shadow: 1px 1px 2px 2px #1617176c;
 
     background-color: #65BFBF;
+
+    
+   
+
 }
 
 form{ /* espaçamento ta tabela e segundo titulo */
     margin-bottom: 15px;
     padding: 10px;
 
-   
+    
     text-align: center;
+
+   
     
     
+}
+
+hr{
+
 }
 
 input{
@@ -80,7 +90,7 @@ button{
     background-color: #4465A6;
     color: aliceblue;
     
-
+margin-top: 5px;
     padding: 0 5px;
     border-radius: 5px;
 
