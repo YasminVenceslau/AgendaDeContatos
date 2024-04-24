@@ -14,33 +14,56 @@ let linhas = ''
 form.addEventListener('submit', function(e) { 
     e.preventDefault()   //remove  o comportamento de atuliazar a página
     
-    criarLinha()
-    
+    const nomeFormatado = FormatarNome() // Armazena o nome formatado em uma variável
+    criarLinha(nomeFormatado) // Passa o nome formatado como argumento para a função criarLinha
     atualizarTabela()
     
 })
 
-function criarLinha(){
+function FormatarNome(){
+
+    // Obtenha o valor do campo de nome do formulário
+    const nomeContato = document.getElementById('nome').value;
+    
+    //divide o nome separando os em espaço
+    const palavras = nomeContato.split(' ')
+
+    //transfomar o inicio da palavra em letra maiúscula
+    const nomeFormatado = palavras.map(palavras => {
+        if (palavras.length > 0){
+            return palavras.charAt(0).toUpperCase() + palavras.slice(1).toLowerCase()
+        }else{
+            return palavras
+        }
+    })
+
+    //Juntas as palavras formatadas
+    return nomeFormatado.join(' ')
+
+}
+
+
+
+function criarLinha(nomeFormatado){
 
      // Obtenha os valores das entradas do formulário
-    const nomeContato = document.getElementById('nome').value
+    
     const telefoneContato = document.getElementById('telefone').value
     const emailContato = document.getElementById('email').value
     const cidadeContato = document.getElementById('cidade').value
     
-    // Adiciona os valores aos arrays correspondentes
-    nomeUsuario.push(nomeContato)
-    telefoneUsuario.push(telefoneContato)
-    emailUsuario.push(emailContato)
-    cidadeUsuario.push(cidadeContato)
-
-    
-
     //verifica se nomeUsuario é incluido como mesmo valor
-    if (tbhy.includes(telefoneUsuario.value)){
-        alert(`O telefone${telefoneUsuario}, já foi inserido `)
+    if (telefoneUsuario.includes(telefoneContato)){
+        alert(`O telefone${telefoneContato}, já foi inserido `)
         return
     }else{
+
+        // Adiciona os valores aos arrays correspondentes
+        nomeUsuario.push(nomeFormatado)
+        telefoneUsuario.push(telefoneContato)
+        emailUsuario.push(emailContato)
+        cidadeUsuario.push(cidadeContato)
+
         //cria as  tabela
         let linha = '<tr>'
         linha += `<td>${nomeUsuario[nomeUsuario.length - 1]}</td>`
@@ -68,9 +91,9 @@ function atualizarTabela(){
     form.reset()
 
     // Limpa os arrays
-    nomeUsuario =''
-    telefoneContato = ''
-    emailUsuario = ''
-    cidadeUsuario = ''
+    nomeUsuario = 0
+    telefoneContato = 0
+    emailUsuario = 0
+    cidadeUsuario = 0
 
 }
