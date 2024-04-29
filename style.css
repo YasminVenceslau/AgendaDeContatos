@@ -28,7 +28,7 @@ body{
 main,
 section{/* torna a página responsivel */
 
-    max-width: 400px;
+    max-width: 600px;
     min-width: 250px;
 
     background-color: #2617176b;
@@ -105,15 +105,10 @@ footer{ /* formataçao do rodape, cor e tamanho */
     color: #F2EBDC;
     padding: 2px;
     
-    
-    
-   
-
-    
     text-align: center;
     font-style: italic;
 
-    font-size: 9px;
+    font-size: 15px;
 
     
     box-shadow: 1px 1px 2px 2px #1617176c;
