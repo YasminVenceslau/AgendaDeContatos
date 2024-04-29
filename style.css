@@ -1,165 +1,123 @@
 :root{ /* elemento raiz */
-    cor1: #2B308C;
-    cor2:#4465A6 ;
-    cor3:#141640;
-    cor4:#F294D1 ;
-    cor5:#65BFBF;
+    cor1: #595454;
+    cor2:#261717 ;
+    cor3:#262001;
+    cor4:#403C01 ;
+    cor5:#BFBCBA;
     cor6: white;
 }
 
-*{ /* zera  */
-    margin: 0;
+*{
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{ /* cor de fundo */
-    
-    background-color: #2B308C;
-    
-    
+body{
+    /* adiciona a imagem de fundo */
+    background-color: aliceblue;
+    background-image: url(imagens/mesa.avif);
+
+    /* especifica o tamanho da imagem de fundo */
+
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
-h1{ /* título cor e font */
+main,
+section{/* torna a página responsivel */
+
+    max-width: 400px;
+    min-width: 250px;
+
+    background-color: #2617176b;
+    margin: 30px 5px; 
+    padding: 5px 0px  5px 5px;
+
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 1px rgba(53, 48, 42, 0.204);
+}
+
+h1{/* modificação do título */
+    color: aliceblue;
+    padding: 5px;
+    text-shadow: 2px 1px 1px rgba(53, 48, 42, 0.204);
     text-align: center;
-    color: white;
-    padding-bottom: 10px;
-
-    text-shadow: 2px 2px 1px #141640;
-    
-}
-
-h2{ /* 2° titulo */
-    margin-bottom:15px ;
-    color: #141640;
-}
-main{ /* torna a página responsivel */
-
-    min-width: 300px;
-    max-width: 600px;
-    text-align: center;
-    margin: 9% auto;
-
-    padding: 30px 5px;
-
-    border-radius: 5px;/* borda arredondada */
-    box-shadow: 1px 1px 2px 2px #1617176c;
-
-    background-color: #65BFBF;
-
-    
-   
-
-}
-
-form{ /* espaçamento ta tabela e segundo titulo */
-    margin-bottom: 15px;
-    padding: 10px;
-
-    
-    text-align: center;
-
-   
-    
-    
-}
-
-hr{
-
 }
 
 input{
-border-color: #141640;
-background-color: #141640ba;
-box-shadow: 1px 1px 2px 1px #08091c3f;
-padding: 0 30px ;
-text-align: center;
-border-radius: 5px;
+    margin: 0 5px 5px;
+    text-align: center;
+    
+}
+input:hover{
+    border: 2px solid #403C01;
 
 }
 
-input:hover{
-    border: 2px solid aliceblue;
-    border-radius: 5px;
-
-    
+p {
+    text-align: center;
 }
 
 button{
-    background-color: #4465A6;
-    color: aliceblue;
-    
-margin-top: 5px;
+    color: #262001;
+    margin-top: 5px;
     padding: 0 5px;
-    border-radius: 5px;
 
     cursor: pointer;
+
+    
 }
 
-button:hover{
-    border: 2px solid aliceblue;
-    background-color:#5b87de;
+thead th{
+
+    color: aliceblue;
+    padding-bottom: 5px;
+    text-shadow: 2px 1px 1px rgba(53, 48, 42, 0.204);
+    text-align: center;
+
+    border-bottom: 2px solid black;
 }
 
-
-
-
-::placeholder{
-    color: rgba(240, 248, 255, 0.458);
-    opacity: 1;
-}
-
-table{/* FAZ A TABELA ficar centralizadda */
+table{
     width: 100%;
-    
+
     border-collapse: collapse;
-    box-shadow: 1px 1px 2px 1px #08091c3f;
-
-}
-table th{
-    background-color: #4465A6;
-    color: aliceblue;
-}
-
-table,td,
-th{/* faz a borda da tabela */
-    border: 1px solid #4465A6;
-    text-align: justify;
-    padding: 5px;
-
     
 }
 
-tr:hover{ /* faz com que ao passar o mouse na tabela, mude de cor */
-    background-color: #5b87de;
-    color: aliceblue;
+table td{
+    border-bottom:1px solid rgba(0, 0, 0, 0.123) ;/* cria uma linha em baixo da tabela */
 }
 
+tbody{
+    text-align: center;
+    color: #262001;
+}
 
 footer{ /* formataçao do rodape, cor e tamanho */
-    background-color: #141640;
+    background-color: #261717bc ;
     color: #F2EBDC;
     padding: 2px;
     
+    
+    
+   
 
-    min-width: 300px;
-    max-width:  600px;
-
-    margin: 50px  auto ;
-
+    
     text-align: center;
     font-style: italic;
 
-    font-size: 13px;
+    font-size: 9px;
 
-    border-radius: 5px;
+    
     box-shadow: 1px 1px 2px 2px #1617176c;
 }
 
 
 footer a{ /* cor do link e retirada da linha */
-    color: #F294D1;
+    color: #8e8d77;
     font-weight: bolder;
     text-decoration: none;
 
